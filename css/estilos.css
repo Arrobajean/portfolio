@@ -4,14 +4,13 @@
 -------------- FORMATO DE LA PÁGINA   ----------------
 ----------------------------------------------------*/
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Nunito', sans-serif;
-font-size: 20px;
-list-style: none;
-text-decoration: none;
+* {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Nunito', sans-serif;font-size: 5;list-style: none;text-decoration: none;}
+
+:root{
+  --h1-font: 5rem;
+  --h2-font: 2.9rem;
+  --h3-font: 1.7rem;
+  --p-font: 1.2rem;
 }
 
 /* ---------------------------------------------------
@@ -19,7 +18,7 @@ text-decoration: none;
 ----------------------------------------------------*/
 
 body {
-  background-color: #66C0FE; /* COLOR DE FONDO */
+  background-color: #66c0fe; /* COLOR DE FONDO */
   color: white; /* COLOR DE LETRAS */
 }
 
@@ -45,11 +44,11 @@ transform: scale(1.05);
 }
 
 .banner h1 {
-font-size: 45px;
+font-size: var(--h1-font);
 }
 
 .banner p {
-font-size: 20px;
+font-size: var(--p-font);
 margin-bottom: 30px;
 }
 
@@ -103,7 +102,7 @@ box-shadow: 0.05em 0.05em;
 
 @media only screen and (max-width: 425px) {
   .btn {
-      font-size: 14px; /* Tamaño de fuente más pequeño */
+      font-size: 0.875rem; /* Tamaño de fuente más pequeño */
       padding: 0.4em 0.8em; /* Ajustar el padding para que sea más pequeño */
   }
 
@@ -189,16 +188,15 @@ box-shadow: 0.05em 0.05em;
     text-align: center;
   }
 
-  .header .nav-links a {
-    font-size: 15px;
+.header .nav-links a {
+    font-size: 1.25rem;
 }
-
 }
 
 @media (max-width: 320) {
 
   .header .nav-links a {
-    font-size: 19px;
+    font-size: 1.188rem;
   }
 }
 
@@ -362,11 +360,11 @@ background-color: #0174BE;
 }
 
 .banner-contacto h1 {
-  font-size: 30px;
+font-size: var(--h1-font);
 }
 
 .banner-contacto p {
-  font-size: 20px;
+  font-size: var(--p-font);
 }
 
 /* Estilos para .container-form (formulario de contacto) */
@@ -416,13 +414,71 @@ background-color: #0174BE;
 
 /* Media queries para hacer el diseño responsive */
 @media (max-width: 768px) {
-  .container-form {
-      max-width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
-      margin: 0 10px; /* Agregar margen a los lados en pantallas pequeñas */
+  .contacto-info {
+    display: flex;
+    flex-direction: column; /* Cambia a una disposición vertical */
+    align-items: center;
+    text-align: center;
   }
 
-  /* Ajusta otros estilos para pantallas pequeñas según sea necesario */
+  .box-contact-features {
+    margin-bottom: 20px;
+  }
+
+  .box-contact-features i {
+    font-size: 24px; /* Reduce el tamaño de los iconos */
+    margin-bottom: 10px; /* Espaciado inferior entre los iconos y el texto */
+  }
+
+  .box-contact-features h4 {
+    font-size: 18px; /* Reduce el tamaño del texto */
+  }
+
+  .banner-contacto h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-contacto p {
+    font-size: 1.2rem;
+  }
 }
+
+  .box-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-form {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+  }
+
+  .btn-container {
+    text-align: center;
+  }
 
 
 /* ---------------------------------------------------
@@ -493,19 +549,19 @@ box-shadow: 0.1em 0.2em black;
     padding: 10px;
   }
   .main-servicio h1 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   .main-servicio p {
-    font-size: 16px;
+    font-size: 1.1rem;
   }
   .sub-servicio {
     padding: 5px;
   }
   .sub-servicio h2 {
-    font-size: 18px;
+    font-size: 1.rem;
   }
   .sub-servicio p {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 
