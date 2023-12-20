@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); /* FONT, LETRA ICONOS*/
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 /* ---------------------------------------------------
 -------------- FORMATO DE LA PÁGINA   ----------------
@@ -151,6 +152,11 @@ body {
     }
   }
 }
+
+
+
+// ESTILOS NAVBAR BOOTSTRAP.
+
 
 
 // RESPONSIVE -----------
@@ -603,7 +609,7 @@ main {
   left: 0;
   width: 100%;
   background-color: #F25C5C;
-  font-size: 13px;
+  font-size: 5px;
   border-radius: 3px;
 }
 
@@ -670,3 +676,13 @@ main {
   
   /* Agrega más reglas de estilo según sea necesario para pantallas más pequeñas */
 }
+
+
+
+
+
+
+
+
+
+

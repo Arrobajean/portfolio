@@ -1,0 +1,597 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"); /* FONT, LETRA ICONOS*/
+/* ---------------------------------------------------
+-------------- FORMATO DE LA PÁGINA   ----------------
+----------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #66C0FE;
+  color: white;
+}
+
+/* ---------------------------------------------------
+---------------       BANNER - SASS      -------------------
+----------------------------------------------------*/
+.banner {
+  text-align: center;
+  margin-top: 30px;
+}
+.banner h1 {
+  font-size: 2.8rem;
+}
+.banner p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.banner button {
+  margin-right: 10px; /* Añade un margen a la derecha del botón */
+}
+
+.banner-img {
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  transition: transform 0.1s;
+}
+.banner-img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------------- QUERIES BANNER------------------- */
+@media (max-width: 768px) {
+  .banner {
+    padding: 10px;
+  }
+  .banner h1 {
+    font-size: 1.25rem;
+  }
+  .banner p {
+    font-size: 0.875rem;
+  }
+  .banner .btn {
+    margin-top: 10px; /* Añade un margen entre los botones */
+  }
+}
+/* ---------------------------------------------------
+------------  ESTILO BOTONES GENERAL - SASS   --------------
+----------------------------------------------------*/
+.btn {
+  background: #F29966;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 1.125rem;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+.btn:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+.btn:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+@media only screen and (max-width: 425px) {
+  .btn {
+    font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+    padding: 0.4em 0.8em; /* Ajustar el padding para que sea más pequeño */
+  }
+  .btn:hover, .btn:active {
+    transform: none; /* Eliminar la transformación en pantallas más pequeñas*/
+    box-shadow: none; /* Eliminar la sombra en pantallas más pequeñas  */
+  }
+}
+
+/* ---------------------------------------------------
+--------------------  HEADER - SASS  -----------------
+----------------------------------------------------*/
+.header {
+  background-color: #111426;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 5%;
+}
+.header .logo-img {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s;
+  border: none;
+  border-radius: 70px;
+}
+.header .logo-img:hover {
+  transform: scale(1.3);
+}
+.header .nav-links {
+  margin: 0;
+  padding: 0;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.header .nav-links li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+.header .nav-links li a:hover {
+  color: #f25c5c;
+  padding-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+  .header .nav-links li {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .header .nav-links li a {
+    font-size: 1.35rem;
+  }
+}
+/* ---------------------------------------------------
+--------------------  FOOTER SASS   -----------------------
+----------------------------------------------------*/
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #151632;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.footer .footer-img {
+  height: 210px;
+  width: auto;
+  transition: all 0.3s;
+  border: none;
+  border-radius: 70px;
+}
+.footer .footer-img:hover {
+  transform: scale(1.1);
+}
+.footer .footer-copyright h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+.footer .footer-copyright h4:hover {
+  color: #f25c5c;
+  padding-left: 2px;
+}
+.footer .footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer .footer-links h4 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0174be;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer .footer-links ul li a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+.footer .footer-links ul li a:hover {
+  color: #f25c5c;
+  padding-left: 8px;
+}
+.footer .social-links a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #f25c5c;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+.footer .social-links a:hover {
+  background-color: #0174be;
+}
+
+/* ====== RESPONSIVE FOOTER ====== */
+@media (max-width: 768px) {
+  .footer-row {
+    text-align: center;
+    display: flex; /* Añadir display flex para centrar los elementos internos */
+    flex-direction: column; /* Establecer dirección de flexión en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+  }
+  .footer-row .footer-img {
+    height: 120px;
+    width: auto;
+  }
+  .footer-row .footer-links h4 {
+    font-size: 1.35rem;
+  }
+  .footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrar elementos horizontalmente */
+    align-items: center; /* Centrar elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+  }
+  .social-links {
+    margin-top: 5px; /* Espacio superior para separar de otros elementos */
+    display: flex; /* Mostrar en línea los iconos sociales */
+    justify-content: center;
+  }
+  .social-links a {
+    margin: 0 10px; /* Espaciado entre los iconos */
+  }
+  .social-links h4 {
+    font-size: 1.35rem;
+  }
+}
+/* ---------------------------------------------------
+--------------  FORMULARIO CONTACTO  -------------------
+----------------------------------------------------*/
+#contacto {
+  padding: 20px;
+}
+#contacto .box-contact-features {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#contacto .box-contact-features a {
+  font-size: 1.563rem;
+}
+
+.box-contacto {
+  display: flex;
+  padding: 20px;
+}
+
+/* Estilos para .contacto-info (contenedor principal) */
+.contacto-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+/* Estilos (encabezado) */
+.banner-contacto {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+.banner-contacto h1 {
+  font-size: 1.875rem;
+}
+.banner-contacto p {
+  font-size: 1.25rem;
+}
+
+/* Estilos para formulario de contacto */
+.container-form {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid black;
+  background: #FBCA1F;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.2em black;
+  color: black;
+}
+.container-form h2 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Estilos para .form-group (grupo de campos) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+/* Estilos para .btn-container (contenedor de botones) */
+.btn-container {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container-form {
+    max-width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    margin: 0 10px; /* Agregar margen a los lados en pantallas pequeñas */
+  }
+  #contacto .box-contact-features a {
+    font-size: 1.25rem;
+  }
+}
+/* ---------------------------------------------------
+---------------- CAJA DE SERVICIOS - ----------------
+----------------------------------------------------*/
+.servicio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 0 25px;
+}
+.servicio-grid .main-servicio {
+  grid-column: span 2;
+  background-color: #64BCFC;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.servicio-grid .main-servicio h1 {
+  font-size: 30px;
+}
+.servicio-grid .main-servicio p {
+  font-size: 18px;
+}
+.servicio-grid .sub-servicio {
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid black;
+  background: #FBCA1F;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.2em black;
+}
+.servicio-grid .sub-servicio h2 {
+  margin-top: 8px;
+  font-size: 21px;
+}
+.servicio-grid .sub-servicio p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.servicio-grid .logo-servicio {
+  height: 100px;
+  width: 100px;
+  transition: transform 0.3s;
+  margin-top: 10px;
+}
+.servicio-grid .logo-servicio:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .servicio-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .servicio-grid .main-servicio {
+    grid-column: span 1;
+    padding: 10px;
+  }
+  .servicio-grid .main-servicio h1 {
+    font-size: 25px;
+  }
+  .servicio-grid .main-servicio p {
+    font-size: 16px;
+  }
+  .servicio-grid .sub-servicio {
+    padding: 5px;
+  }
+  .servicio-grid .sub-servicio h2 {
+    font-size: 18px;
+  }
+  .servicio-grid .sub-servicio p {
+    font-size: 14px;
+  }
+}
+
+/* ---------------------------------------------------
+---------------- ACERCA DE MÍ , ABOUT US -------------
+----------------------------------------------------*/
+main {
+  display: grid;
+  gap: 20px;
+}
+main .about-section {
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  padding: 50px;
+}
+main .about-section h1 {
+  font-size: 2rem;
+}
+
+.team-section {
+  text-align: center;
+}
+.team-section h2 {
+  font-size: 1.8rem;
+}
+.team-section .team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.team-section .team-members .team-member {
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.2em 0.23em black;
+  margin: 25px;
+}
+.team-section .team-members .team-member img {
+  width: 100%;
+  height: auto;
+}
+.team-section .team-members .team-member button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.container-about h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .team-section .team-members {
+    grid-template-columns: 1fr;
+  }
+}
+/* ---------------------------------------------------
+--------------  PORTAFOLIO  -------------------
+----------------------------------------------------*/
+/* Estilos de la sección de portafolio */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.portfolio-item {
+  flex: 0 0 calc(25% - 20px); /* Reducido al 25% del ancho con espacio entre elementos */
+  margin: 10px;
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+  border: 5px #4B71BF; /* Cambiado el color del borde y ajustado el tamaño para que coincida con el hover */
+  border-radius: 0.4em;
+  box-shadow: 0.2em 0.2em #F25C5C;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-item p {
+  padding: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F25C5C;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.portfolio-item p {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.portfolio-item:hover p {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------
+----------------  PORTAFOLIO/PROYECTOS  --------------
+----------------------------------------------------*/
+.single-project {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.single-project img {
+  padding-bottom: 20px;
+}
+
+.box-portfolio {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.box-portfolio p {
+  padding-bottom: 12px;
+}
+
+.box-portfolio img {
+  width: 100%;
+}
+
+.box-portfolio ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.single-project .single-project-btn .prev {
+  padding-top: 20px;
+  float: left;
+}
+
+.single-project .single-project-btn .next {
+  padding-top: 20px;
+  float: right;
+}
+
+/* ====== RESPONSIVE FLEX - PORTAFOLIO ====== */
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex: 0 0 calc(50% - 20px); /* Ajusta el tamaño de los elementos en pantallas más pequeñas */
+  }
+  /* Agrega más reglas de estilo según sea necesario para pantallas más pequeñas */
+}
+
+/*# sourceMappingURL=estilos.css.map */
