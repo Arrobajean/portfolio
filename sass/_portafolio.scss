@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); /* FONT, LETRA ICONOS*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Estilos para las imágenes
+.img-fluid {
+    transition: transform 0.3s ease-in-out;
+    // Otros estilos de imagen...
+
+    &:hover {
+        transform: scale(1.1);
+        // Otros estilos para el hover...
+    }
+}
+
+// Otros estilos...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos de la sección de portafolio */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .portfolio-item {
+    flex: 0 0 calc(25% - 20px); /* Reducido al 25% del ancho con espacio entre elementos */
+    margin: 10px;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    border: 5px #4B71BF; /* Cambiado el color del borde y ajustado el tamaño para que coincida con el hover */
+    border-radius: 0.4em;
+    box-shadow: 0.2em 0.2em #F25C5C;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .portfolio-item p {
+    padding: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F25C5C;
+    font-size: 5px;
+    border-radius: 3px;
+  }
+  
+  .portfolio-item p {
+    transition: opacity 0.2s ease;
+    opacity: 0;
+  }
+  
+  .portfolio-item:hover p {
+    opacity: 1;
+  }
+  
+  /* ---------------------------------------------------
+  ----------------  PORTAFOLIO/PROYECTOS  --------------
+  ----------------------------------------------------*/
+  .single-project {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+  
+  .single-project img {
+    padding-bottom: 20px;
+  }
+  
+  .box-portfolio {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .box-portfolio p {
+    padding-bottom: 12px;
+  }
+  
+  .box-portfolio img {
+    width: 100%;
+  }
+  
+  .box-portfolio ul {
+    list-style: none;
+    padding-bottom: 20px;
+  }
+  
+  .single-project .single-project-btn .prev {
+    padding-top: 20px;
+    float: left;
+  }
+  
+  .single-project .single-project-btn .next {
+    padding-top: 20px;
+    float: right;
+  }
+  
+  /* ====== RESPONSIVE FLEX - PORTAFOLIO ====== */
+  @media (max-width: 768px) {
+    .portfolio-item {
+      flex: 0 0 calc(50% - 20px); /* Ajusta el tamaño de los elementos en pantallas más pequeñas */
+    }
+    /* Agrega más reglas de estilo según sea necesario para pantallas más pequeñas */
+  }

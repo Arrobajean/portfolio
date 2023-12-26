@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #66C0FE;
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); /* FONT, LETRA ICONOS*/
+@import "../node_modules/bootstrap/scss/bootstrap";
