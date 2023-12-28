@@ -1,19 +1,14 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-@import "_reset.scss";
-@import "_nosotros.scss";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+
 p {
-  color: #fff;
+  color: #000000;
 }
 
 h1, .h1 {
   font-weight: bold;
   margin-bottom: 40px;
   padding-top: 40px;
-  color: #fff;
+  color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -105,6 +100,7 @@ h1, .h1 {
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12461,6 +12457,7 @@ p {
     scroll-behavior: smooth;
   }
 }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -24604,18 +24601,8 @@ textarea.form-control-lg {
     scroll-behavior: smooth;
   }
 }
-body {
-  margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+
+
 
 hr {
   margin: 1rem 0;
@@ -36544,54 +36531,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* ---------------------------------------------------
----------------       BANNER - SASS      -------------------
-----------------------------------------------------*/
-.banner {
-  text-align: center;
-  margin-top: 30px;
-}
 
-.banner h1, .banner .h1 {
-  font-size: 2.8rem;
-}
 
-.banner p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-}
-
-.banner button {
-  margin-right: 10px; /* Añade un margen a la derecha del botón */
-}
-
-.banner-img {
-  max-width: 100%;
-  max-height: 500px;
-  width: auto;
-  height: auto;
-  transition: transform 0.1s;
-}
-
-.banner-img:hover {
-  transform: scale(1.05);
-}
-
-/* ---------------------- QUERIES BANNER------------------- */
-@media (max-width: 768px) {
-  .banner {
-    padding: 10px;
-  }
-  .banner h1, .banner .h1 {
-    font-size: 1.25rem;
-  }
-  .banner p {
-    font-size: 0.875rem;
-  }
-  .banner .btn {
-    margin-top: 10px; /* Añade un margen entre los botones */
-  }
-}
 /* ---------------------------------------------------
 ------------  ESTILO BOTONES GENERAL - SASS   --------------
 ----------------------------------------------------*/
@@ -36995,72 +36936,16 @@ textarea.form-control-lg {
     font-size: 14px;
   }
 }
-/* ---------------------------------------------------
----------------- ACERCA DE MÍ , ABOUT US -------------
-----------------------------------------------------*/
-main {
-  display: grid;
-  gap: 20px;
-}
 
-main .about-section {
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-  padding: 50px;
-}
 
-main .about-section h1, main .about-section .h1 {
-  font-size: 2rem;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import "_banner.scss";
+@import "_reset.scss";
+@import "_nosotros.scss";
 
-.team-section {
-  text-align: center;
-}
-
-.team-section h2, .team-section .h2 {
-  font-size: 1.8rem;
-}
-
-.team-section .team-members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.team-section .team-members .team-member {
-  border: 3px solid black;
-  border-radius: 0.4em;
-  box-shadow: 0.2em 0.23em black;
-  margin: 25px;
-}
-
-.team-section .team-members .team-member img {
-  width: 100%;
-  height: auto;
-}
-
-.team-section .team-members .team-member button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.title {
-  color: white;
-  font-size: 1.25rem;
-}
-
-.container-about h3, .container-about .h3 {
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 650px) {
-  .team-section .team-members {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 /*# sourceMappingURL=estilos.scss.map */

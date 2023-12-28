@@ -8,14 +8,10 @@
     text-decoration: none;
 }
 
-body {
-    background-color: #66C0FE;
-    color: white;
-}
+$body-bg: #f8f8f8;
+$body-color: #000000;
+
 
 p {
-    color: black;
+    color: #000000;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); /* FONT, LETRA ICONOS*/
-@import "../node_modules/bootstrap/scss/bootstrap";
