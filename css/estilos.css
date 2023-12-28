@@ -36753,106 +36753,6 @@ textarea.form-control-lg {
   }
 }
 /* ---------------------------------------------------
---------------  FORMULARIO CONTACTO  -------------------
-----------------------------------------------------*/
-#contacto {
-  padding: 20px;
-}
-
-#contacto .box-contact-features {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#contacto .box-contact-features a {
-  font-size: 1.563rem;
-}
-
-.box-contacto {
-  display: flex;
-  padding: 20px;
-}
-
-/* Estilos para .contacto-info (contenedor principal) */
-.contacto-info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-/* Estilos (encabezado) */
-.banner-contacto {
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-}
-
-.banner-contacto h1, .banner-contacto .h1 {
-  font-size: 1.875rem;
-}
-
-.banner-contacto p {
-  font-size: 1.25rem;
-}
-
-/* Estilos para formulario de contacto */
-.container-form {
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 3px solid black;
-  background: #FBCA1F;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.2em black;
-  color: black;
-}
-
-.container-form h2, .container-form .h2 {
-  text-align: center;
-  font-size: 1.25rem;
-}
-
-/* Estilos para .form-group (grupo de campos) */
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-}
-
-.form-group input[type=text],
-.form-group input[type=email],
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.form-group textarea {
-  resize: none;
-}
-
-/* Estilos para .btn-container (contenedor de botones) */
-.btn-container {
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .container-form {
-    max-width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
-    margin: 0 10px; /* Agregar margen a los lados en pantallas pequeñas */
-  }
-  #contacto .box-contact-features a {
-    font-size: 1.25rem;
-  }
-}
-/* ---------------------------------------------------
 ---------------- CAJA DE SERVICIOS - ----------------
 ----------------------------------------------------*/
 .servicio-grid {
@@ -48970,6 +48870,109 @@ p {
   color: #000000;
 }
 
+/* ---------------------------------------------------
+--------------  FORMULARIO CONTACTO  -------------------
+----------------------------------------------------*/
+#contacto {
+  padding: 20px;
+}
 
+#contacto .box-contact-features {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contacto .box-contact-features a {
+  font-size: 1.563rem;
+}
+
+.box-contacto {
+  display: flex;
+  padding: 20px;
+}
+
+/* Estilos para .contacto-info (contenedor principal) */
+.contacto-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+/* Estilos (encabezado) */
+.banner-contacto {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.banner-contacto h1,
+.banner-contacto .h1 {
+  font-size: 1.875rem;
+}
+
+.banner-contacto p {
+  font-size: 1.25rem;
+}
+
+/* Estilos para formulario de contacto */
+.container-form {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid rgb(0, 0, 0);
+  background: #c9c9c9;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.2em rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.container-form h2,
+.container-form .h2 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Estilos para .form-group (grupo de campos) */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+/* Estilos para .btn-container (contenedor de botones) */
+.btn-container {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container-form {
+    max-width: 100%;
+    /* Ocupar todo el ancho en pantallas pequeñas */
+    margin: 0 10px;
+    /* Agregar margen a los lados en pantallas pequeñas */
+  }
+  #contacto .box-contact-features a {
+    font-size: 1.25rem;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
