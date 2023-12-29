@@ -1,0 +1,94 @@
+/* ---------------------------------------------------
+---------------- CAJA DE SERVICIOS - ----------------
+----------------------------------------------------*/
+
+
+.servicio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 25px;
+}
+
+.servicio-grid .main-servicio {
+    grid-column: span 2;
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicio-grid .main-servicio h1,
+.servicio-grid .main-servicio .h1 {
+    font-size: 30px;
+    color: black;
+}
+
+.servicio-grid .main-servicio p {
+    font-size: 18px;
+}
+
+.servicio-grid .sub-servicio {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid rgb(0, 0, 0);
+    background: #b6b6b6;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.2em black;
+}
+
+.servicio-grid .sub-servicio h2,
+.servicio-grid .sub-servicio .h2 {
+    margin-top: 8px;
+    font-size: 21px;
+}
+
+.servicio-grid .sub-servicio p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.servicio-grid .logo-servicio {
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s;
+    margin-top: 10px;
+}
+
+.servicio-grid .logo-servicio:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .servicio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .servicio-grid .main-servicio {
+        grid-column: span 1;
+        padding: 10px;
+    }
+
+    .servicio-grid .main-servicio h1,
+    .servicio-grid .main-servicio .h1 {
+        font-size: 25px;
+    }
+
+    .servicio-grid .main-servicio p {
+        font-size: 16px;
+    }
+
+    .servicio-grid .sub-servicio {
+        padding: 5px;
+    }
+
+    .servicio-grid .sub-servicio h2,
+    .servicio-grid .sub-servicio .h2 {
+        font-size: 18px;
+    }
+
+    .servicio-grid .sub-servicio p {
+        font-size: 14px;
+    }
+}
