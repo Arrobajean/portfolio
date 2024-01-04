@@ -1,0 +1,36 @@
+/* ---------------------------------------------------
+------------  ESTILO BOTONES GENERAL - SASS   --------------
+----------------------------------------------------*/
+.btn {
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-size: 1.125rem;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+.btn:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.btn:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+@media only screen and (max-width: 425px) {
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.4em 0.8em;
+        /* Ajustar el padding para que sea más pequeño */
+    }
+
+    .btn:hover,
+    .btn:active {
+        transform: none;
+        /* Eliminar la transformación en pantallas más pequeñas*/
+        box-shadow: none;
+        /* Eliminar la sombra en pantallas más pequeñas  */
+    }
+}
